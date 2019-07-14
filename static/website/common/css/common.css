@@ -1,0 +1,138 @@
+html, body {
+    background: #f2f2f2;
+}
+
+.layui-fluid {
+    padding: 0;
+}
+
+.layui-header, .layui-nav {
+    background-color: #23262E;
+}
+
+.layui-layout-admin .layui-logo{
+    display: flex;
+    justify-content: center;
+    left: 280px;
+}
+
+.layui-logo span{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    flex: 0 1 auto;
+}
+
+.layui-logo svg{
+    flex: 0 1 auto;
+}
+
+.layui-layout-left{
+    left: 450px;
+}
+
+.layui-col-space30 {
+    margin: 15px 30px;
+}
+
+.layui-col-space30 > * {
+    padding: 30px;
+}
+
+.add-pet {
+    display: inline-block;
+    padding: 12px 0;
+    width: 100%;
+    height: 48px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 48px;
+    cursor: pointer;
+    background: transparent;
+    color: #333;
+}
+
+.add-pet:hover {
+    color: #333
+}
+
+.sort{
+    padding-top: 30px;
+}
+
+.pet-type {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+.pet-type:first-child {
+    border-bottom: 1px solid #eef1f1;
+}
+
+.pet-type span{
+    display: block;
+}
+
+.big-sort, .clearfix {
+    flex: 0 1 auto;
+}
+
+.big-sort {
+    padding: 0 30px;
+    margin-right: 30px;
+    height: 48px;
+    line-height: 48px;
+    background: url("../images/fen.png") no-repeat center right;
+}
+
+
+.clearfix li {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 48px;
+}
+
+.clearfix li.add-job{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #1E9FFF;
+    cursor: pointer;
+}
+
+.layui-carousel img{
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail {
+    padding-top: 30px;
+}
+
+.article-list {
+    padding: 20px 30px;
+    margin-left: 30px;
+    height: 380px;
+}
+
+.article-list li {
+    line-height: 38px;
+    color: #333;
+}
+.layui-footer .noun{
+    margin: 30px 0;
+    text-align: left;
+}
+.noun li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.noun li:first-child{
+    padding-left: 0;
+}
+
+.links{
+    text-align: center;
+}
