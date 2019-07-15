@@ -1,0 +1,21 @@
+html,body,.markdown{
+    height: 100%;
+}
+.layui-row,.layui-col-md6,.textarea{
+    height: 80%;
+}
+textarea,.content {
+    padding: 20px;
+    width: 97%;
+    height: 80%;
+    resize: none;
+    border: none;
+    color: #666;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.content{
+    color: #333;
+    border-left: 2px solid #e8e8e8;
+}

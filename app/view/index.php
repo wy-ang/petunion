@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <!--        <i class="layui-icon layui-icon-add-1 add-pet layui-btn" id="addPet"></i>-->
+<!--                <i class="layui-icon layui-icon-add-1 add-pet layui-btn" id="addPet"></i>-->
         <?php include "../public/footer.php"; ?>
     </div>
     <script>
@@ -95,22 +95,11 @@
                         for (var j = 0; j < data[i].smallSort.length; j++) {
                             sortUl.push('<li><a href="">' + data[i].smallSort[j] + '</a></li>');
                         }
-                        sortUl.push('<li class="add-job" id="addJob">新增</li></ul></div>');
+                        sortUl.push('</ul></div>');
                     }
                     $('#sort').html(sortUl.join(''));
                 }
             });
-
-
-            //新增职位
-            $(function () {
-                $('#sort').on('click', '#addJob', function () {
-                    layer.open({
-                        type: 1,
-                        content: '传入任意的文本或html' //这里content是一个普通的String
-                    });
-                });
-            })
 
             // 精品推荐
             $.ajax({
