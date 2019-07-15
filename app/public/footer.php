@@ -1,9 +1,9 @@
 <div class="layui-col-md8 layui-col-md-offset2">
     <div class="layui-footer">
-        <div class="layui-card noun">
-            <h2 class="layui-card-header">名词科普</h2>
-            <ul class="layui-card-body" id="nounList"></ul>
-        </div>
+<!--        <div class="layui-card noun">-->
+<!--            <h2 class="layui-card-header">名词科普</h2>-->
+<!--            <ul class="layui-card-body" id="nounList"></ul>-->
+<!--        </div>-->
         <div class="links">
             <a href="http://www.goupu.com.cn/about/index.html">关于我们</a> |
             <a href="http://www.goupu.com.cn/about/contact.html">联系我们</a> |

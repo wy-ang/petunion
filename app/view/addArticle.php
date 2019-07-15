@@ -57,7 +57,7 @@
                 content: content,
             },
             success: function (res) {
-                console.log(res);
+                layui.msg(res.msg);
             }
         })
     });

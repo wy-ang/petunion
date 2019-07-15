@@ -111,7 +111,7 @@
                     $('#boutique').empty();
                     var boutique = [];
                     for (var i = 0; i < data.length; i++) {
-                        boutique.push('<li><a href="">' + data[i].title + '</a></li>');
+                        boutique.push('<li class="boutiqueItem" id='+ data[i].id +'><a href='+ data[i].path +'>' + data[i].title + '</a></li>');
                     }
                     $('#boutique').html(boutique.join(''));
                 }
