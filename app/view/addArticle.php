@@ -70,7 +70,7 @@
             var title = $('#title').val();
             var content = editor.getHTML();
             $.ajax({
-                url: '../controller/article.php',
+                url: '../controller/addArticle.php',
                 dataType: 'json',
                 type: 'post',
                 data: {
@@ -78,9 +78,10 @@
                     content: content,
                 },
                 success: function (res) {
-                    layui.msg(res.msg);
+                    console.log(res);
+                    // window.location.href = '';
                 }
-            })
+            });
         });
     });
 </script>

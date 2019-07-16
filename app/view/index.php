@@ -60,7 +60,7 @@
             });
             // 图片轮播
             $.ajax({
-                url: '../controller/view.php',
+                url: '../controller/fileList.php',
                 type: 'GET',
                 dataType: "json",
                 success: function (res) {
@@ -103,7 +103,7 @@
 
             // 精品推荐
             $.ajax({
-                url: '../controller/article.php',
+                url: '../controller/articleList.php',
                 type: 'GET',
                 dataType: "json",
                 success: function (res) {

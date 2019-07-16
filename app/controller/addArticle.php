@@ -9,21 +9,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $content = $_POST['content'];
     if (!empty($title)){
         $sql = "INSERT INTO pet_article (title,content) VALUES ('$title','$content')";  //插入语句
+        $selectSql = "SELECT id,title FROM pet_article";
         $con->query($sql);
         $con->close();
         returnRes(array("code" => 200, "data" => [], "msg" => "发布成功"));
     }
-}
-
-$selectSql = "SELECT id,title FROM pet_article";
-$result = $con->query($selectSql);
-if ($result->num_rows > 0) {
-    $allArr = array();
-    while ($row = $result->fetch_assoc()) {
-        $fileArr["title"] = $row['title'];
-        $fileArr["id"] = $row['id'];
-        $fileArr["path"] = "/app/view/article.php?id=" . $row['id'];
-        $allArr[] = $fileArr;
-    }
-    returnRes(array("code" => 200, "data" => $allArr, "msg" => "查询成功"));
 }

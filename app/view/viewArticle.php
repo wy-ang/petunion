@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>查看文章</title>
     <link rel="stylesheet" href="../../static/common/js/layui/css/layui.css">
     <link rel="stylesheet" href="../../static/common/js/editor.md/css/editormd.min.css" />
     <link rel="stylesheet" href="../../static/website/common/css/common.css">
@@ -44,7 +44,7 @@
 
     var id = GetQueryString('id');
     $.ajax({
-        url: '../controller/selectArticle.php',
+        url: '../controller/viewArticle.php',
         type: 'POST',
         dataType: "json",
         data: {
