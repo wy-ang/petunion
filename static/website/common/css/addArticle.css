@@ -1,21 +1,61 @@
-html,body,.markdown{
+html, body, .markdown {
     height: 100%;
 }
-.layui-row,.layui-col-md6,.textarea{
-    height: 80%;
-}
-textarea,.content {
-    padding: 20px;
-    width: 95%;
-    height: 80%;
-    resize: none;
-    border: none;
-    color: #666;
-    font-size: 18px;
-    background-color: transparent;
+
+.layui-fluid {
+    margin: 0;
 }
 
-.content{
-    color: #333;
-    border-left: 2px solid #e8e8e8;
+.height {
+    height: 97%;
+}
+
+.title {
+    position: absolute;
+    top: 41px;
+    left: 48px;
+    z-index: 999;
+    font-size: 30px;
+    padding: 10px;
+    width: calc(50vw - 78px);
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    background: #fff;
+}
+
+.editormd {
+    width: calc(100vw - 2px) !important;
+}
+
+.CodeMirror-code{
+    margin-top: 60px;
+}
+
+.textarea-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 50px;
+    line-height: 50px;
+    background: #c2c2c2;
+}
+
+.textarea-header ul, .textarea-header li {
+    display: inline-block;
+    height: 50px;
+}
+
+.textarea-header svg {
+    padding: 0 5px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.textarea-header span.submit {
+    cursor: pointer;
+}
+
+.textarea-header span.submit svg {
+    padding-right: 5px;
+    vertical-align: middle;
 }

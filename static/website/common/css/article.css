@@ -1,0 +1,10 @@
+.article{
+    padding: 30px;
+}
+
+.article p,.article li{
+    line-height: 24px;
+}
+.article h2{
+    padding-bottom: 30px;
+}
